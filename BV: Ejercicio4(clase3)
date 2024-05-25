@@ -1,0 +1,31 @@
+class Cancion:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+
+    def get_titulo(self):
+        return self.titulo
+
+    def get_autor(self):
+        return self.autor
+
+    def set_titulo(self, titulo):
+        self.titulo = titulo
+    
+    def set_autor(self, autor):
+        self.autor = autor
+
+# Crear una instancia de Cancion
+cancion = Cancion("Hero", "Alan Walker ft Sasha Alex Sloan")
+
+# Obtener y mostrar los valores
+print(f"Título: {cancion.get_titulo()}")
+print(f"Autor: {cancion.get_autor()}")
+
+# Modificar los valores
+cancion.set_titulo("Faded")
+cancion.set_autor("Alan Walker")
+
+# Obtener y mostrar los valores modificados
+print(f"Título: {cancion.get_titulo()}")
+print(f"Autor: {cancion.get_autor()}")
